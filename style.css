@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+:root {
+  --main-color: #239b7e;
+  --main-font: "Playfair Display SC", serif;
+  --primary-font: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+.wrapper {
+  margin: 1rem 7rem;
+}
+
+/* Nav Start */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: var(--primary-font);
+  font-size: 30px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.burger span {
+  border: 2px solid var(--main-color);
+  width: 40px;
+  height: 1px;
+  margin: 2px;
+}
+/* Nav End */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  max-width: 50%;
+  margin-top: 15%;
+  font-family: var(--main-font);
+}
+
+.content h1 {
+  font-size: 55px;
+}
+.content h1 span {
+  color: rgb(95, 95, 95);
+}
+.content p {
+  max-width: 70%;
+  margin: 3rem 0;
+  color: rgb(126, 125, 125);
+}
+
+button,
+.btn-outline {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid var(--main-color);
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+button.shop,
+.btn-outline {
+  background-color: #239b7e;
+  color: #fff;
+}
+.st,
+button.off {
+  background-color: #fff;
+  color: #239b7e;
+}
+
+.btn-outline:hover,
+.shop:hover {
+  background-color: #fff;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.st:hover,
+.off:hover {
+  background-color: #239b7e;
+  color: #fff;
+  border: 2px solid var(--main-color);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.img-container {
+  max-width: 50%;
+  border-radius: 50%;
+  background: url("images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg");
+  background-position: top;
+  background-size: cover;
+  margin-top: 15%;
+  box-shadow: 5px 6px 15px rgb(110, 110, 110);
+  transition: all 0.5s ease-in-out;
+}
+
+.img {
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+}
+
+.img-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* header end */
+
+.header-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.img-container-2 {
+  max-width: 50%;
+  border-radius: 50%;
+  background: url("images/gesphotoss-1i9K55ni5Dk-unsplash.jpg");
+  background-position: top;
+  background-size: cover;
+  margin-top: 15%;
+  box-shadow: 5px 6px 15px rgb(110, 110, 110);
+  width: 400px;
+  height: 400px;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-2 {
+  border-radius: 100%;
+  margin-right: 3rem;
+}
+
+.img-container-2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.content-2 {
+  max-width: 500px;
+  margin-top: 15%;
+  font-family: var(--main-font);
+  margin: 15% 5rem;
+}
+
+.content-2 h1 {
+  font-size: 55px;
+}
+.content-2 h1 span {
+  color: rgb(95, 95, 95);
+}
+.content-2 p {
+  max-width: 70%;
+  margin: 3rem 0;
+  color: rgb(126, 125, 125);
+}
+
+.products {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products .products-heading {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.products .product-categories button {
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+
+.active {
+  color: #fff;
+  background: #239b7e;
+}
+
+.products .product-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  max-width: 60rem;
+}
+
+.products .product-items-container .item {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.products .product-items-container .item .item-layer {
+  background: #ebf1f0;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.products .product-items-container .item .item-layer img {
+  width: 150px;
+  height: 200px;
+}
+
+.products .product-items-container .item .view-product {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.our-clints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  /* max-width: 60rem; */
+}
+
+.our-clints .clint-says {
+  padding: 7rem;
+}
+
+.our-clints .clint-says h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.our-clints .clint-says p {
+  text-align: center;
+}
+.our-clints .clint-says .clint-img {
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.our-clints .clint-says .clint-img-1 {
+  background: url("images/yogendra-singh-uWs_N5Dlyiw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.our-clints .clint-says .clint-img-2 {
+  background: url("images/joshua-rondeau-xazIYnxpS2Q-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.our-clints .clint-says .clint-img-3 {
+  background: url("images/milan-popovic-kOnmHdLJTNI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.footer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+}
+
+.footer .c {
+  padding: 8rem;
+  font-family: var(--primary-font);
+}
+
+.footer .c h1 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.footer .c p {
+  margin-bottom: 20px;
+}
+
+.footer .c p a {
+  color: #fff;
+}
